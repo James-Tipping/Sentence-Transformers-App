@@ -1,0 +1,25 @@
+# macOS system files
+.DS_Store
+
+# Python bytecode
+__pycache__/
+
+# Python virtual environment
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled Python files
+*.pyc
+
+# Logs
+*.log
+
+# Dependency directories
+env/
+lib/
+
+# h5 files
+*.h5
