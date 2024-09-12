@@ -18,13 +18,13 @@ clone the repository and attempt yourself.
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/sentence-similarity-api.git
+git clone https://github.com/James-Tipping/Sentence-Transformers-App.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd sentence-similarity-api
+cd "Sentence Similarity API"
 ```
 
 3. Install the required dependencies:
@@ -55,7 +55,7 @@ python main.py
 ### 2. Send a POST request to the `/nlp/summarise-text` endpoint with a sentence in the request body.
 
 ```
-POST /nlp/summarise-text
+POST http://0.0.0.0:8000/nlp/summarise-text
 Content-Type: application/json
 
 {
@@ -79,7 +79,7 @@ Requests to this endpoint search a SimpleWiki database for semantically similar 
 answers to questions in Google search.
 
 ```
-POST /nlp/question-answer-retrieval
+POST http://0.0.0.0:8000/nlp/question-answer-retrieval
 Content-Type: application/json
 
 {
@@ -121,7 +121,7 @@ Requests sent to this enpoint search a Quora database of questions to find seman
 function found on many websites.
 
 ```
-POST /nlp/quora-autocomplete
+POST http://0.0.0.0:8000/nlp/quora-autocomplete
 Content-Type: application/json
 
 {
