@@ -2,7 +2,7 @@ import h5py
 import os
 import pandas as pd
 import numpy as np
-from .base_strategy_with_dataset import BaseStrategyWithDataset
+from .abstract_base_strategy_with_dataset import BaseStrategyWithDataset
 from sentence_transformers import SentenceTransformer, util
 from app.constants import StrategyEmbeddingsData
 
@@ -66,7 +66,7 @@ class QuoraAutocompleteStrategy(BaseStrategyWithDataset):
         embeddings_length = model.get_sentence_embedding_dimension() or 384
         
         for i in range(0, number_of_texts, strategy_data['texts_step']):
-            embeddings = model.encode(corpus_sentences[i : i+strategy_data['texts_step']], show_progress_bar=True, device='cpu')
+            embeddings = model.encode(corpus_sentences[i : i+strategy_data['texts_step']], show_progress_bar=True)
 
             with h5py.File(strategy_data["h5_filename"], "a") as f:
                 current_length = f["embeddings"].shape[0] # type: ignore

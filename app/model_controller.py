@@ -1,6 +1,6 @@
 from typing import Optional
 from sentence_transformers import SentenceTransformer
-from app.strategy.base_strategy import BaseStrategy
+from app.strategy.abstract_base_strategy import BaseStrategy
 from app.strategy.strategy_factory import StrategyFactory
 import asyncio
 from app.constants import MODEL_NAME

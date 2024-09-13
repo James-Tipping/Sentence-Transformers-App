@@ -4,7 +4,7 @@ import os
 import h5py
 import numpy as np
 import pandas as pd
-from .base_strategy_with_dataset import BaseStrategyWithDataset
+from .abstract_base_strategy_with_dataset import BaseStrategyWithDataset
 from sentence_transformers import SentenceTransformer, util
 from app.constants import StrategyEmbeddingsData
 
@@ -84,7 +84,7 @@ class QuestionAnswerStrategy(BaseStrategyWithDataset):
 
         for i in range(0, number_of_texts, strategy_data['texts_step']):
             texts = [passage for passage in passages[i:i+strategy_data['texts_step']]]
-            embeddings = model.encode(texts, show_progress_bar=True, device='cpu')
+            embeddings = model.encode(texts, show_progress_bar=True)
         
             print(f'Embeddings generated {i + strategy_data["texts_step"]}')
             

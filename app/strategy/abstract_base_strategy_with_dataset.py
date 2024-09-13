@@ -2,7 +2,7 @@ from abc import abstractmethod
 import os
 from google.cloud import storage
 from sentence_transformers import SentenceTransformer, util
-from .base_strategy import BaseStrategy
+from .abstract_base_strategy import BaseStrategy
 import h5py
 from app.constants import StrategyData, StrategyEmbeddingsData
 

@@ -2,7 +2,7 @@
 import nltk
 import numpy as np
 from sentence_transformers import util
-from .base_strategy import BaseStrategy
+from .abstract_base_strategy import BaseStrategy
 from app.lexrank import degree_centrality_scores
 
 
