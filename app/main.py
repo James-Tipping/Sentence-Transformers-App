@@ -2,8 +2,9 @@ import asyncio
 import logging
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from Constants import RequestStructure
-from model_controller import ModelController
+from .constants import RequestStructure
+from .model_controller import ModelController
+
 import uvicorn
 
 

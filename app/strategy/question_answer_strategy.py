@@ -4,9 +4,9 @@ import os
 import h5py
 import numpy as np
 import pandas as pd
-from BaseStrategyWithDataset import BaseStrategyWithDataset
+from .base_strategy_with_dataset import BaseStrategyWithDataset
 from sentence_transformers import SentenceTransformer, util
-from Constants import StrategyEmbeddingsData
+from app.constants import StrategyEmbeddingsData
 
 
 class QuestionAnswerStrategy(BaseStrategyWithDataset):

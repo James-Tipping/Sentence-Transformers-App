@@ -2,8 +2,8 @@
 import nltk
 import numpy as np
 from sentence_transformers import util
-from BaseStrategy import BaseStrategy
-from LexRank import degree_centrality_scores
+from .base_strategy import BaseStrategy
+from app.lexrank import degree_centrality_scores
 
 
 class SummarisationStrategy(BaseStrategy):

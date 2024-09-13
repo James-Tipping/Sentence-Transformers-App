@@ -1,9 +1,9 @@
 import asyncio
 from sentence_transformers import SentenceTransformer
-from Constants import QuestionAnswerStrategyData, QuoraAutocompleteStrategyData
-from QuestionAnswerStrategy import QuestionAnswerStrategy
-from QuoraAutocompleteStrategy import QuoraAutocompleteStrategy
-from SummarisationStrategy import SummarisationStrategy
+from app.constants import QuestionAnswerStrategyData, QuoraAutocompleteStrategyData
+from .question_answer_strategy import QuestionAnswerStrategy
+from .quora_autocomplete_strategy import QuoraAutocompleteStrategy
+from .summarisation_strategy import SummarisationStrategy
 
 
 class StrategyFactory:

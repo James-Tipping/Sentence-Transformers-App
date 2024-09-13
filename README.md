@@ -27,7 +27,7 @@ git clone https://github.com/James-Tipping/Sentence-Transformers-App.git
 cd "Sentence Similarity API"
 ```
 
-3. Install the required dependencies:
+3. Install the required dependencies and activate environment:
 
 ```
 conda env create -f environment.yml
@@ -37,6 +37,12 @@ If you are not running on Apple Silicon architecture, a platform independent dep
 
 ```
 conda env create -f environment_portable.yml
+```
+
+Then activate the required environment
+
+```
+conda activate pytorch
 ```
 
 It is strongly recommended to use conda to install dependencies, particularly as some libraries such as h5py have native dependencies that
@@ -49,7 +55,7 @@ There is also an included Dockerfile which may aid in setting up the API. This h
 ### 1. Start the API server:
 
 ```
-python main.py
+python -m app.main
 ```
 
 ### 2. Send a POST request to the `/nlp/summarise-text` endpoint with a sentence in the request body.

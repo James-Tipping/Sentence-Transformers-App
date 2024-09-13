@@ -1,9 +1,9 @@
 from typing import Optional
 from sentence_transformers import SentenceTransformer
-from BaseStrategy import BaseStrategy
-from StrategyFactory import StrategyFactory
+from app.strategy.base_strategy import BaseStrategy
+from app.strategy.strategy_factory import StrategyFactory
 import asyncio
-from Constants import MODEL_NAME
+from app.constants import MODEL_NAME
 import logging
 
 

@@ -23,12 +23,12 @@ class StrategyEmbeddingsData(TypedDict):
     
 QuestionAnswerStrategyData: StrategyData = {
     "h5_filename": "question_answer_model_database.h5",
-    "h5_file_bucket": "ml-models-data-jamestipping"
+    "h5_file_bucket": "ml-models-data-jamestipping",
 }
 
 QuoraAutocompleteStrategyData: StrategyData = {
     "h5_filename": "quora_autocomplete_model_database.h5",
-    "h5_file_bucket": "ml-models-data-jamestipping"
+    "h5_file_bucket": "ml-models-data-jamestipping",
 }
     
 QuestionAnswerStrategyEmbeddingsData: StrategyEmbeddingsData = {
@@ -38,7 +38,7 @@ QuestionAnswerStrategyEmbeddingsData: StrategyEmbeddingsData = {
     "database_texts_max_shape": (None, 2),
     "max_no_steps": 1_500_000,
     "texts_step": 50_000,
-    "h5_filename": QuestionAnswerStrategyData["h5_filename"]
+    "h5_filename": QuestionAnswerStrategyData["h5_filename"],
 }
 
 QuoraAutocompleteStrategyEmbeddingsData: StrategyEmbeddingsData = {
@@ -48,5 +48,5 @@ QuoraAutocompleteStrategyEmbeddingsData: StrategyEmbeddingsData = {
     "database_texts_max_shape": (None,),
     "max_no_steps": 1_500_000,
     "texts_step": 50_000,
-    "h5_filename": QuoraAutocompleteStrategyData["h5_filename"]
+    "h5_filename": QuoraAutocompleteStrategyData["h5_filename"],
 }

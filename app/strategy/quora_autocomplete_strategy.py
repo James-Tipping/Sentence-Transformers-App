@@ -2,9 +2,9 @@ import h5py
 import os
 import pandas as pd
 import numpy as np
-from BaseStrategyWithDataset import BaseStrategyWithDataset
+from .base_strategy_with_dataset import BaseStrategyWithDataset
 from sentence_transformers import SentenceTransformer, util
-from Constants import StrategyEmbeddingsData
+from app.constants import StrategyEmbeddingsData
 
 
 class QuoraAutocompleteStrategy(BaseStrategyWithDataset):

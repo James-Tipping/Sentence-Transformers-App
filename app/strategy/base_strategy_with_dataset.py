@@ -2,9 +2,9 @@ from abc import abstractmethod
 import os
 from google.cloud import storage
 from sentence_transformers import SentenceTransformer, util
-from BaseStrategy import BaseStrategy
+from .base_strategy import BaseStrategy
 import h5py
-from Constants import StrategyData, StrategyEmbeddingsData
+from app.constants import StrategyData, StrategyEmbeddingsData
 
 
 class BaseStrategyWithDataset(BaseStrategy):
